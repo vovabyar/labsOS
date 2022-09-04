@@ -25,9 +25,7 @@ int main(int argc, char* argv[]) {
 		std::cout << "Enter working hours: ";
 		std::cin >> emp.hours;
 		if (emp.hours < 0) throw std::invalid_argument("negative value!");
-
 		out.write((char*)&emp, sizeof(employee));
-		std::cout << "\n";
 	}
 	out.close();
 
